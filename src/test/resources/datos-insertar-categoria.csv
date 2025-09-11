@@ -1,0 +1,4 @@
+usuario,clave,categoria,mensajeEsperado
+admin,clave,CELULAR,Se guardó de manera correcta la Categoría
+admin,clave,"",Nombre: Error de validación: se necesita un valor.
+admin,clave,LAPTOP,Se guardó de manera correcta la Categoría

@@ -1,0 +1,5 @@
+usuario,clave,producto,valuecbo,precio,mensajeEsperado
+admin,clave,Producto taller 2,2,12.5,Se guardó de manera correcta el Producto
+admin,clave,"",3,11.4,Nombre: Error de validación: se necesita un valor.
+admin,clave,taller 2,2,82.1,Se guardó de manera correcta el Producto
+admin,clave,Producto sin precio,3,"",Precio: Error de validación: se necesita un valor.
