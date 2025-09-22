@@ -1,4 +1,4 @@
-package pe.visorweb.pagina.producto;
+package pe.visorweb.pagina.producto.csv;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import pe.visorweb.driver.VisorDriver;
 import pe.visorweb.driver.VisorDriver.Navegador;
 import pe.visorweb.pagina.login.PaginaLogin;
+import pe.visorweb.pagina.producto.PaginaRegistrarProducto;
 
 public class PaginaRegistrarProductoCsvTest {
 	

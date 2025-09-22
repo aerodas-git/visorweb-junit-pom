@@ -12,6 +12,17 @@ public class PaginaMantenimientoProducto extends PaginaBase {
 	@FindBy(id = "btnNuevo")
 	WebElement btnNuevo;
 	
+	//Actualizar
+	
+	@FindBy(id="btnFiltrar")
+	WebElement btnFiltrar;
+	
+	@FindBy(xpath="//tr[@data-ri='2']")
+	WebElement productoActualizado;
+	
+	@FindBy(id="btnActualizar")
+	WebElement btnActualizar;
+	
 	WebDriver driver;
 
 	public PaginaMantenimientoProducto(WebDriver driver) {
@@ -21,6 +32,13 @@ public class PaginaMantenimientoProducto extends PaginaBase {
 	public PaginaRegistrarProducto cargarPaginaRegistrarProducto() {
 		btnNuevo.click();
 		return new PaginaRegistrarProducto(driver);
+	}
+	
+	public PaginaActualizarProducto cargarPaginaActualizarProducto() {
+		btnFiltrar.click();
+		productoActualizado.click();
+		btnActualizar.click();
+		return new PaginaActualizarProducto(driver);
 	}
 	
 }
