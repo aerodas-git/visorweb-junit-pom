@@ -59,9 +59,10 @@ public class PaginaMantenimientoProducto extends PaginaBase {
 	public PaginaEliminarProducto cargarPaginaEliminarProducto(String value) {
 		btnFiltrar.click();
 		List<WebElement> filas = driverWait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//tbody[@id='tablaProductos_data']/tr"),1 ));
-		//System.out.println("********* "+ filas.size());
+		//System.out.println("********* filas:"+ filas.size());
+		//System.out.println("********* value:"+ value);
 
-		if (value != "") {
+		if (value != "" && !value.isEmpty() && filas.size() > 0) {
 			tablaDatos.findElement(By.xpath(".//tr[@data-ri='"+value+"']")).click();
 		}	
 		btnEliminar.click();

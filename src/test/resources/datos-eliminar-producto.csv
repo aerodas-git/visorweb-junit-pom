@@ -1,0 +1,3 @@
+usuario,clave,value,mensajeEsperado
+admin,clave,3,Se eliminó de manera correcta el Producto
+admin,clave,"",No ha seleccionado un Producto
