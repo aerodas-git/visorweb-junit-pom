@@ -36,8 +36,6 @@ public class PaginaActualizarProducto extends PaginaBase {
 	}
 	
 	public void actualizar(String producto, String value, String precio) {
-		//txtNombre.clear();
-		//txtNombre.sendKeys(categoria);
 		escribir(txtNombre, producto);
 		cboselect(cboCategoria, value);
 		escribir(txtPrecio, precio);
