@@ -1,15 +1,11 @@
 package pe.visorweb.pagina.producto;
 
-import java.nio.file.Files;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import pe.visorweb.helper.VisorHelper;
 import pe.visorweb.pagina.base.PaginaBase;
 
 public class PaginaMantenimientoProducto extends PaginaBase {
