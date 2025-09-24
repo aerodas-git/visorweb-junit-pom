@@ -1,0 +1,3 @@
+usuario,clave,textoBuscar,mensajeEsperado
+admin,clave,PRUEBA,Existen registros para la consulta
+admin,clave,NOEXISTE,No existe registros para la consulta

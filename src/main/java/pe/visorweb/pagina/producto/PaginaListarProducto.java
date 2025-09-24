@@ -45,17 +45,17 @@ public class PaginaListarProducto extends PaginaBase {
 	public String getMensaje() {
 		VisorHelper.pausar();
 		List<WebElement> filas = driverWait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.xpath("//tbody[@id='tablaProductos_data']/tr"),0 ));
-		System.out.println("**** filas del resultado de la tabla: "+filas.size());
+		//System.out.println("**** filas del resultado de la tabla: "+filas.size());
 		String mensajeObtenido = "Existen registros para la consulta";;
 		
 		boolean existeTexto = tablaDatos.getText().contains("No existe registros para la consulta"); 
-		System.out.println("**** existeTexto: "+existeTexto);
+		//System.out.println("**** existeTexto: "+existeTexto);
 		
 		if (filas.size() == 1 && existeTexto) {
 
 			mensajeObtenido = lblMensaje.getText();
 		}
-		System.out.println("****mensajeobtenido: "+mensajeObtenido);
+		//System.out.println("****mensajeobtenido: "+mensajeObtenido);
 		return mensajeObtenido;
 	}
 
